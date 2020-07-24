@@ -1,0 +1,21 @@
+{
+    "name": "soluzione-software/laravel-open-graph",
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*",
+        "illuminate/database": "5.8.*",
+        "shweshi/opengraph": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoluzioneSoftware\\Laravel\\OpenGraph\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SoluzioneSoftware\\Laravel\\OpenGraph\\ServiceProvider"
+            ]
+        }
+    }
+}
