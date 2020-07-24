@@ -56,7 +56,9 @@ class Manager
         $locale = $locale ?: App::getLocale();
 
         $data = $this->fetch($url, $locale);
-        $this->store($url, $locale, $data);
+        if ($data){
+            $this->store($url, $locale, $data);
+        }
 
         return $data;
     }
