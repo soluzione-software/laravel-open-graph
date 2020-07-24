@@ -38,8 +38,8 @@ class OpenGraphData extends Model implements OpenGraphDataContract
 
     public function store(string $url, string $locale, array $data): OpenGraphDataContract
     {
-        /** @var self $openGrpahData */
-        $openGrpahData = static::query()->updateOrCreate(['url_hash' => md5($url), 'locale' => $locale], ['url' => $url, 'data' => $data]);
-        return $openGrpahData;
+        /** @var self $openGraphData */
+        $openGraphData = static::query()->updateOrCreate(['url_hash' => md5($url), 'locale' => $locale], ['url' => $url, 'data' => $data]);
+        return $openGraphData;
     }
 }
